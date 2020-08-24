@@ -1,11 +1,34 @@
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
+//function for topnav responsive bar
+function myFunction() {
+  var x = document.getElementById("myTopbar");
+  if(x.className == "topbar") {
+    x.className += " responsive";
+  }
+  else {
+    x.className = "topbar";
+  }
 }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
+//function for mobiles dropdown
+function myMobile() {
+  document.getElementById("mobiles").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn'))
+  {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++)
+    {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 
+//function for automatic slideshow
 var slideIndex = 0;
 showSlides();
 
@@ -23,5 +46,5 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000); // Changes image every 2 seconds
 }
