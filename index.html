@@ -6,19 +6,22 @@
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
   </head>
   <body>
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="mobiles.html">Mobiles and Accessories</a>
+    <div id="myTopbar" class="topbar">
+      <a class="active" href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Mobiles</button>
+        <div class="dropdown-content">
+          <a href="#">>10k</a>
+          <a href="#">10k-20k</a>
+          <a href="#">20k-30k</a>
+          <a href="website.html">Premium Mobiles</a>
+        </div>
+      </div>
       <a href="wishlist.html">Wishlist</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <div id="main">
-      <div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
-      </div>
-      <br>
       <div class="page-content">
         <div class="slideshow-container">
           <div class="mySlides fade">
@@ -178,30 +181,6 @@
         <br>
         <hr style="width:40%;text-align:center">
         <script src="index.js"></script>
-      </div>
-      <div class="filter-container">
-        <div class="filter-content">
-          <h4 style="text-align:center">
-            Filter search
-          </h4>
-          <section class="mobile-range">
-            <button class="mobilebtn">Mobiles</button>
-            <div class="dropdown-content">
-              <a href="#">>10k</a>
-              <a href="#">>20k</a>
-              <a href="#">>30k</a>
-              <a href="website.html">Premium mobile</a>
-            </div>
-          </section>
-          <section class="earphone-range">
-            <button class="earphonebtn">Earphones</button>
-            <div class="dropdown-content">
-              <a href="#">>1k</a>
-              <a href="#">1k - 3k</a>
-              <a href="#">3k - 6k</a>
-            </div>
-          </section>
-        </div>
       </div>
     </div>
 
