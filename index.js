@@ -28,6 +28,25 @@ window.onclick = function(event) {
   }
 }
 
+//function for earphones dropdown
+function myEarphone() {
+  document.getElementById("earphones").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn'))
+  {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++)
+    {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 //function for automatic slideshow
 var slideIndex = 0;
 showSlides();

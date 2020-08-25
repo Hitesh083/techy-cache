@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Web Page Design</title>
-  <style>
-   img {
-    float:left;
-   }
-  </style>
- </head>
- <body>
+<head>
+<title>Web Page Design</title>
+<style>
+img {
+  float:left;
+  width: 14%;
+  height: auto;
+}
+
+a {
+  text-decoration:none;
+}
+
+@media screen and (min-width:601px) {
+  .head1 {
+    font-size: 2vw;
+  }
+
+  .head2 {
+    font-size: 1.5vw;
+  }
+
+  .head3 {
+    font-size: 1.17vw;
+  }
+}
+
+@media screen and (max-width:770px) {
+  .head1 {
+    font-size: 3vw;
+  }
+
+  .head2 {
+    font-size: 2.5vw;
+  }
+
+  .head3 {
+    font-size: 2.17vw;
+  }
+}
+</style>
+</head>
+<body>
   <center>
-   <h1 style="background-color:DodgerBlue;">Heading</h1>
-  </center>
-  <h2 style="color:#136207">Premium Mobile Segment</h2>
-  <a style="text-decoration:none;" href="C:/Users/K%20HOSHANTH/Desktop/website1.html">
-   <img src="iphone.jpg" "alt="iPhoneimage">
-   <h1>&nbsp&nbsp&nbsp &nbsp&nbsp&nbspApple iPhone 11 Pro Max (64GB)<br></h1>
-   <h2>&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbspPrice:₹1,17,100.</h2>
-   <h3>&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp Storage sizes:64GB/256GB/512GB</h3>
-   <h3>&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp Designed in America and assembled in china</h3>
+    <h1 style="background-color:DodgerBlue;">Heading</h1>
+</center>
+<h2 style="color:#136207">Premium Mobile Segment</h2>
+<div>
+  <a href="iphone11_specifications.html">
+    <img src="iphone.jpg" width="157px" height="218px" alt="iPhoneimage">
   </a>
-  <br><br><br><br><br>
- </body>
+</div>
+<div>
+  <a href="iphone11_specifications.html">
+    <h1 class="head1">&nbsp&nbsp&nbsp &nbsp&nbsp&nbspApple iPhone 11 Pro Max (64GB)<br></h1>
+    <h2 class="head2">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbspPrice:₹1,17,100.</h2>
+    <h3 class="head3">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp Storage sizes:64GB/256GB/512GB</h3>
+    <h3 class="head3">&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp Designed in America and assembled in china</h3>
+  </a>
+</div>
+<br><br><br><br><br>
+</body>
 </html>
