@@ -3,6 +3,16 @@ body{
   margin-top: 0;
 }
 
+img {
+  float:left;
+  width: 14%;
+  height: auto;
+}
+
+a {
+  text-decoration:none;
+}
+
 .topbar {
   overflow: hidden;
   background-color: #eaf6f6;
@@ -110,141 +120,30 @@ body{
   }
 }
 
-#main{
-  transition: margin-left .5s;
-  padding: 16px;
-}
+@media screen and (min-width:601px) {
+  .head1 {
+    font-size: 2vw;
+  }
 
-.page-content {
-}
+  .head2 {
+    font-size: 1.5vw;
+  }
 
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-.slideshow-container {
-  box-sizing: border-box;
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-html{
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.mobile-column{
-  float: left;
-  width: 25%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.heading {
-  text-align: center;
-}
-
-@media screen and (max-width: 650px) {
-  .mobile-column {
-    width: 100%;
-    display: block;
+  .head3 {
+    font-size: 1.17vw;
   }
 }
 
-@media screen and (min-width: 601px) {
-  .heading{
-    font-size: 70px;
+@media screen and (max-width:770px) {
+  .head1 {
+    font-size: 3vw;
   }
-}
 
-@media screen and (max-width: 770px) {
-  .heading {
-    font-size: 30px;
+  .head2 {
+    font-size: 2.5vw;
   }
-}
 
-.mobile-row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.earphone-column {
-  float: left;
-  width: 25%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-  .earphone-column {
-    width: 100%;
-    display: block;
-  }
-}
-
-.earphone-row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media screen and (min-width: 601px) {
-  .title{
-    font-size: 25px;
-  }
-  .title1{
-    font-size: 23px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .title {
-    font-size: 20px;
-  }
-  .title1{
-    font-size: 20px;
+  .head3 {
+    font-size: 2.17vw;
   }
 }
